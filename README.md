@@ -1,7 +1,7 @@
 This repository contains code to perform Monte Carlo simulations of electrons
 in a transition metal dichalcogenide heterobilayer (TMD) heterobilayer
 Moire system in the strong coupling limit. For further details
-see the associated manuscript.
+see the associated manuscript: https://arxiv.org/abs/2112.08624
 
 REQUIREMENTS: 
   Python 3 including numpy, scipy, and matplotlib
