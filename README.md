@@ -3,24 +3,39 @@ in a transition metal dichalcogenide heterobilayer (TMD) heterobilayer
 Moire system in the strong coupling limit. For further details
 see the associated manuscript: https://arxiv.org/abs/2112.08624
 
-REQUIREMENTS: 
-  Python 3 including numpy, scipy, and matplotlib
+SYSTEM REQUIREMENTS:
+  The software has the following dependencies, and has only been tested using the listed version numbers:
+    Python >= 3.7.3
+    numpy >= 1.17.0
+    scipy >= 1.7.3
+    matplotlib >= 3.0.3
+  
+  There is no required non-standard hardware.
+  
+INSTALLATION GUIDE:
+  All one should have to do is clone the git repository.
+  The dependencies can be installed by standard means e.g. pip or anaconda.
+  Typical install time should not exceed a few minutes.
 
-RUNNING A SIMULATION:
-  To do a simulation, run the file particle_mc.py It takes a system size,
-  filling fraction numerator, and output filename prefix as command
-  line arguments in that order. One may also wish to change the parameters
-  detailed in the main function. The file run_sims.py auto-generates
-  prefixes and runs simulations for multiple numerators simultaneously
-  in the background.
+DEMO:
 
-ANALYZING SIMULATION OUTPUT:
-  The code outputs lattice configurations obtained at each MC step
-  at which one collects data. Editing the 'prefix' variable in
-  analysis.py will change which file is loaded, and MC averages
-  of the nematic order parameter correlation function, orientational
-  paameter, and structure factor are calculated. 
-  One could add more operators as described below.
+INSTRUCTIONS FOR USE: 
+
+  RUNNING A SIMULATION:
+    To do a simulation, run the file particle_mc.py It takes a system size,
+    filling fraction numerator, and output filename prefix as command
+    line arguments in that order. One may also wish to change the parameters
+    detailed in the main function. The file run_sims.py auto-generates
+    prefixes and runs simulations for multiple numerators simultaneously
+    in the background.
+
+  ANALYZING SIMULATION OUTPUT:
+    The code outputs lattice configurations obtained at each MC step
+    at which one collects data. Editing the 'prefix' variable in
+    analysis.py will change which file is loaded, and MC averages
+    of the nematic order parameter correlation function, orientational
+    paameter, and structure factor are calculated. 
+    One could add more operators as described below.
 
 SYSTEM GEOMETRY:
   The simulations that this code performs take place on the triangular Moire
