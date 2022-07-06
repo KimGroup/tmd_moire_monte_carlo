@@ -5,10 +5,10 @@ see the associated manuscript: https://arxiv.org/abs/2112.08624
 
 SYSTEM REQUIREMENTS:
   The software has the following dependencies, and has only been tested using the listed version numbers:
-    Python >= 3.7.3
-    numpy >= 1.17.0
-    scipy >= 1.7.3
-    matplotlib >= 3.0.3
+    Python >= 3.7.3,
+    numpy >= 1.17.0,
+    scipy >= 1.7.3,
+    matplotlib >= 3.0.3.
   
   There is no required non-standard hardware.
   
@@ -18,7 +18,13 @@ INSTALLATION GUIDE:
   Typical install time should not exceed a few minutes.
 
 DEMO:
-
+  A sample lattice for analysis is provided in test/test_lattices.py.
+  Instantiating the NematicOP class in the Python REPL and calling the evaluate
+  method on the sample lattices should return 0, and should take order milliseconds.
+  The file test/test_mc.py calculates exact energies for a small lattice to compare to MC.
+  Inputting the same l, n_particles, and t's into src/particle_mc.py should produce 
+  almost identical sets of average energies, and take order 10's of minutes.
+  
 INSTRUCTIONS FOR USE: 
 
   RUNNING A SIMULATION:
